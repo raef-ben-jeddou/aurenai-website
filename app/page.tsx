@@ -1,3 +1,4 @@
+import { Navbar } from '@/components/marketing/Navbar';
 import { HeroSection } from '@/components/marketing/HeroSection';
 import { ProblemBento } from '@/components/marketing/ProblemBento';
 import { ArchitectureOverview } from '@/components/marketing/ArchitectureOverview';
@@ -11,21 +12,21 @@ export default function Home() {
     '@type': 'Corporation',
     name: 'AurenAI',
     url: 'https://aurenai.tech',
-    logo: 'https://aurenai.tech/aurenai_logo.jpeg',
+    logo: 'https://aurenai.tech/logo.svg',
     description: 'AI-driven load shifting and solar forecasting for industrial energy optimization.',
     industry: 'Artificial Intelligence, Energy Technology',
   };
 
   return (
     <>
-      {/* Inject Structured Data into the Head */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       
-      <div className="flex flex-col min-h-screen w-full overflow-x-hidden">
-        {/* Navigation placeholder */}
+      <div className="flex flex-col min-h-screen w-full overflow-x-hidden relative">
+        {/* Injected Global Navigation */}
+        <Navbar />
         
         <main className="flex-grow w-full">
           <section aria-label="Hero" className="w-full">
@@ -48,8 +49,6 @@ export default function Home() {
             <BottomCTA />
           </section>
         </main>
-        
-        {/* Footer placeholder */}
       </div>
     </>
   );

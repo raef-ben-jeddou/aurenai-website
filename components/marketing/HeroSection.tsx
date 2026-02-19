@@ -14,7 +14,7 @@ export function HeroSection() {
         {/* Trust Badge */}
         <div className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary-foreground mb-8 backdrop-blur-sm animate-fade-up" style={{ animationDelay: '0.1s' }}>
           <span className="flex h-2 w-2 rounded-full bg-accent mr-2 animate-pulse"></span>
-          Piloting in Tunisia • Q2 2026
+          // Piloting in Tunisia • Q2 2026
         </div>
 
         {/* Hard-hitting B2B Headline */}
