@@ -1,5 +1,8 @@
 import { MetadataRoute } from 'next';
 
+// REQUIRED FOR STATIC EXPORT: Forces Next.js to evaluate this at build time
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://aurenai.tech';
 
@@ -17,9 +20,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      // Referencing the markdown file found in your content/blog/ directory
       url: `${baseUrl}/blog/cbam-compliance-guide/`,
-      lastModified: new Date('2026-02-15'), // Update to match exact publish date
+      lastModified: new Date('2026-02-15'), 
       changeFrequency: 'monthly',
       priority: 0.7,
     },
