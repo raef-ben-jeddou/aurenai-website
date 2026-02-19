@@ -11,14 +11,8 @@ export function HeroSection() {
 
       <div className="container relative z-10 mx-auto px-6 text-center animate-fade-in">
         
-        {/* Trust Badge */}
-        <div className="inline-flex items-center rounded-full border border-primary/30 bg-primary/10 px-3 py-1 text-sm font-medium text-primary-foreground mb-8 backdrop-blur-sm animate-fade-up" style={{ animationDelay: '0.1s' }}>
-          <span className="flex h-2 w-2 rounded-full bg-accent mr-2 animate-pulse"></span>
-          // Piloting in Tunisia • Q2 2026
-        </div>
-
         {/* Hard-hitting B2B Headline */}
-        <h1 className="mx-auto max-w-5xl font-display text-5xl font-bold tracking-tight text-white sm:text-7xl mb-6 animate-fade-up" style={{ animationDelay: '0.2s' }}>
+        <h1 className="mx-auto max-w-5xl font-display text-5xl font-bold tracking-tight text-white sm:text-7xl mb-6 animate-fade-up" style={{ animationDelay: '0.1s' }}>
           AI-Driven Energy Optimization for <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-accent to-primary">
             Heavy Industry
@@ -26,14 +20,14 @@ export function HeroSection() {
         </h1>
 
         {/* Concrete Value Proposition */}
-        <p className="mx-auto max-w-2xl text-lg text-gray-400 mb-10 leading-relaxed animate-fade-up" style={{ animationDelay: '0.3s' }}>
+        <p className="mx-auto max-w-2xl text-lg text-gray-400 mb-10 leading-relaxed animate-fade-up" style={{ animationDelay: '0.2s' }}>
           AurenAI autonomously reschedules flexible industrial loads to align with peak onsite solar generation. 
           Reduce grid reliance by up to <span className="text-white font-semibold">30%</span>, lower OPEX, and accelerate 
           EU CBAM compliance—with zero disruption to core production.
         </p>
 
         {/* CTA Group */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: '0.4s' }}>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up" style={{ animationDelay: '0.3s' }}>
           <Link 
             href="/#contact" 
             className="inline-flex h-12 items-center justify-center rounded-md bg-accent px-8 text-sm font-bold text-[#091210] shadow transition-all hover:bg-accent/90 hover:scale-[1.02] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
